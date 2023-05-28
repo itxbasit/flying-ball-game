@@ -1,0 +1,62 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/pexels-stephan-seeber-1261728.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#ground {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(-45deg, #da5c36, #e73c7e, #23a6d5, #73cfb9);
+    animation: gradient 5s ease infinite;
+    position: absolute;
+    bottom: 0;
+}
+
+#character {
+    width: 50px;
+    height: 50px;
+    background-color: #F88158;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    right: calc(100% - 100px);
+}
+
+.obstacle {
+    width: 30px;
+    height: 100px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background: linear-gradient(-50deg, #dfee15, #e73c7e, #1cf53c,  #23a6d5);
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+
+h2 {
+    margin: 10px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
